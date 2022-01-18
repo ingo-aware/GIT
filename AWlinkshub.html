@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Links website</title>
+    <style>
+
+      body {
+          background-image: url(https://www.w3schools.com/howto/img_link_tree_template1_bg.jpg); /* The image used for background*/
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+      }
+
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .link {
+        min-width: 50% !important;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+      .container {
+          max-width: 720px;
+        }
+
+      .link {
+          width: 100%;
+        }
+      }
+      @media (min-width: 576px) {
+      .container {
+          max-width: 540px;
+        }
+      }
+
+      .w3-purple, .w3-hover-purple:hover {
+        color: #fff!important;
+        background-color: rgba(156, 39, 176, 0.6) !important;
+      }
+
+    </style>
+  </head>
+
+  <body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+        <img
+          src="data:image/png;base64,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"
+          class="w3-margin"
+          alt="Logo Aware"
+          max-width="100%"
+          height="150px"
+          style="border-radius: 50%"
+        />
+        <div class="w3-text-white">
+          <p class="w3-text-white w3-large"> Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><strong>Aware Career's</strong></span>link site!
+          </p>
+          <p class="w3-large"><strong>See what my cracked head up to.</strong></p>
+        </div>
+
+        <!-- Links section 1. Replace the # inside of the "" with your links. -->
+        <div class="links-container">
+          <a href="https://www.facebook.com/AwareGroupCareers" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+          <a href="https://www.instagram.com/awarepeople/" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+          <a href="https://twitter.com/AwareCorp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+          <a href="https://www.aware.co.th/it-jobs/" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fa fa-code"></i>Website</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
